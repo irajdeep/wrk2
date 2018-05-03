@@ -30,6 +30,8 @@ LDIR     = deps/luajit/src
 LIBS    := -lluajit $(LIBS)
 CFLAGS  += -I$(LDIR)
 LDFLAGS += -L$(LDIR)
+CFLAGS  += -I/usr/local/opt/openssl/include
+LIBS    += -L/usr/local/opt/openssl/lib
 
 all: $(BIN)
 
